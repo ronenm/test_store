@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/ronenm/spree_inkomerce.git
-  revision: 0204a8cd96b4ac51e9fcd219926c47a8372daea5
+  revision: 212a5f68da1444bcd89cf4733cc01b99a3be1330
   specs:
     spree_inkomerce (0.1.0)
       durable_decorator (~> 0.2.0)
