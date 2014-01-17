@@ -15,6 +15,7 @@ Spree.config do |config|
   config.s3_bucket  = ENV['S3_BUCKET']
   config.s3_access_key = ENV['S3_ACCESS_KEY']
   config.s3_secret = ENV['S3_SECRET']
+  config.attachment_path = ENV['ATTACHMENT_PATH']
 end
 
 Spree.user_class = "Spree::User"
