@@ -55,3 +55,6 @@ gem 'spree_inkomerce', git: 'https://github.com/ronenm/spree_inkomerce.git'
 
 gem 'rails_12factor', group: :production
 
+group :assets do
+  gem 'turbo-sprockets-rails3'
+end
