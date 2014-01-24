@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/ronenm/spree_inkomerce.git
-  revision: 212a5f68da1444bcd89cf4733cc01b99a3be1330
+  revision: 07d341942db9fdd7bb6fb70eb7a9c421b761f6d2
   specs:
     spree_inkomerce (0.1.0)
       durable_decorator (~> 0.2.0)
@@ -18,7 +18,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: 92b424f05c9fc1b3e8b63a2af9dd2a1bd321b35e
+  revision: f6f91480655b8bd0179ba29a7fef917e8d20e101
   branch: 2-1-stable
   specs:
     spree_auth_devise (2.1.0)
