@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/ronenm/spree_inkomerce.git
-  revision: 07d341942db9fdd7bb6fb70eb7a9c421b761f6d2
+  revision: 2655d4f84a9430df446c05d63f3803cbf3c4fb68
   specs:
     spree_inkomerce (0.1.0)
       durable_decorator (~> 0.2.0)
@@ -123,7 +123,7 @@ GEM
       method_source
     erubis (2.7.0)
     execjs (2.0.2)
-    ffaker (1.22.1)
+    ffaker (1.23.0)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.20)
@@ -209,7 +209,7 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
-    sass (3.2.13)
+    sass (3.2.14)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
