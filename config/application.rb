@@ -23,6 +23,19 @@ module TestStore
 
     config.assets.initialize_on_precompile = false
 
+    config.paperclip_defaults = {
+      storage: :fog,
+      fog_credentials: {
+        aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+        aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+        provider: 'AWS',
+        region: 'us-east-1'
+      },
+      fog_directory: ENV['S3_BUCKET'],
+      fog_public: true,
+      fog_host: 'https://d3kc0rng12tbez.cloudfront.net',
+    }
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

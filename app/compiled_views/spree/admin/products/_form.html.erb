@@ -7,10 +7,10 @@
       <%= f.error_message_on :name %>
     <% end %>
 
-    <%= f.field_container :permalink do %>
-      <%= f.label :permalink, raw(Spree.t(:permalink) + content_tag(:span, ' *',  :class => "required")) %>
-      <%= f.text_field :permalink, :class => 'fullwidth title' %>
-      <%= f.error_message_on :permalink %>
+    <%= f.field_container :slug do %>
+      <%= f.label :slug, raw(Spree.t(:slug) + content_tag(:span, ' *',  :class => "required")) %>
+      <%= f.text_field :slug, :class => 'fullwidth title' %>
+      <%= f.error_message_on :slug %>
     <% end %>
 
     <%= f.field_container :description do %>
@@ -127,7 +127,6 @@
     <% end %>
   </div>
 
-  <!-- <h2><%= Spree.t(:metadata) %></h2> -->
   <div data-hook="admin_product_form_meta" class="alpha omega twelve columns">
     <%= f.field_container :meta_keywords do %>
       <%= f.label :meta_keywords, Spree.t(:meta_keywords) %>
