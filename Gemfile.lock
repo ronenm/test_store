@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/ronenm/inkomerce_api.git
-  revision: 0855ee5b16ce3c6171d9394acc9dbf9a3a4cce16
+  revision: d20a3696b8509d4a8bde0463260106fe28aaa0b1
   specs:
     inkomerce_api (0.1.0)
 
 GIT
   remote: https://github.com/ronenm/spree_inkomerce.git
-  revision: 60cae8c389dbd7e3a9ee3813c5df702b785cfcb6
+  revision: efe03835b7829d22c9bcde6f1b9ce4cee62f6b5a
   branch: 2-2-stable
   specs:
     spree_inkomerce (2.2.0)
