@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/ronenm/spree_inkomerce.git
-  revision: 4cd5377a5f993a03df81be6d8b431ccbee32dee1
+  revision: 60cae8c389dbd7e3a9ee3813c5df702b785cfcb6
   branch: 2-2-stable
   specs:
     spree_inkomerce (2.2.0)
