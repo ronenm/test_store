@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ronenm/inkomerce_api.git
-  revision: d20a3696b8509d4a8bde0463260106fe28aaa0b1
+  revision: b2d6fe190ac0aa4db82dbee589eccb0ea4e9850d
   specs:
     inkomerce_api (0.1.0)
 
@@ -26,8 +26,62 @@ GIT
       spree_inkomerce (~> 2.2.0)
 
 GIT
+  remote: https://github.com/spree/spree
+  revision: 9eeb6091a992505e6c9cf234dac641ff1789e5f5
+  branch: 2-2-stable
+  specs:
+    spree (2.2.2.beta)
+      spree_api (= 2.2.2.beta)
+      spree_backend (= 2.2.2.beta)
+      spree_cmd (= 2.2.2.beta)
+      spree_core (= 2.2.2.beta)
+      spree_frontend (= 2.2.2.beta)
+      spree_sample (= 2.2.2.beta)
+    spree_api (2.2.2.beta)
+      rabl (= 0.9.3)
+      spree_core (= 2.2.2.beta)
+      versioncake (~> 1.2.0)
+    spree_backend (2.2.2.beta)
+      jquery-rails (~> 3.1.0)
+      jquery-ui-rails (~> 4.1.0)
+      select2-rails (~> 3.4.7)
+      spree_api (= 2.2.2.beta)
+      spree_core (= 2.2.2.beta)
+    spree_cmd (2.2.2.beta)
+      thor (~> 0.14)
+    spree_core (2.2.2.beta)
+      activemerchant (~> 1.42.3)
+      acts_as_list (= 0.3.0)
+      awesome_nested_set (~> 3.0.0.rc.3)
+      aws-sdk (= 1.27.0)
+      cancan (~> 1.6.10)
+      deface (~> 1.0.0)
+      ffaker (~> 1.16)
+      friendly_id (= 5.0.3)
+      highline (~> 1.6.18)
+      httparty (~> 0.11)
+      json (~> 1.7)
+      kaminari (~> 0.15.0)
+      monetize
+      paperclip (~> 3.4.1)
+      paranoia (~> 2.0)
+      rails (~> 4.0.3)
+      ransack (~> 1.1.0)
+      state_machine (= 1.2.0)
+      stringex (~> 1.5.1)
+      truncate_html (= 0.9.2)
+    spree_frontend (2.2.2.beta)
+      canonical-rails (~> 0.0.4)
+      jquery-rails (~> 3.1.0)
+      spree_api (= 2.2.2.beta)
+      spree_core (= 2.2.2.beta)
+      stringex (~> 1.5.1)
+    spree_sample (2.2.2.beta)
+      spree_core (= 2.2.2.beta)
+
+GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: 1ccd7048bf5595bcfd0ccdb7a8863c12fcf84991
+  revision: e75c1f021c4353b2e10474dfb9181dc8d4571b40
   branch: 2-2-stable
   specs:
     spree_auth_devise (2.2.0)
@@ -36,27 +90,24 @@ GIT
       devise-encryptable (= 0.1.2)
       json
       multi_json
-      spree_backend (~> 2.2.0)
       spree_core (~> 2.2.0)
-      spree_frontend (~> 2.2.0)
 
 GIT
   remote: https://github.com/spree/spree_gateway.git
-  revision: 3b4a48bf444b484b5271e149d59397841dc1696c
+  revision: 8d3c09fd63ee61676b5a3b5be37e05b482379db9
   branch: 2-2-stable
   specs:
     spree_gateway (2.2.1)
-      savon (~> 1.2)
       spree_core (~> 2.2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.3)
-      actionpack (= 4.0.3)
+    actionmailer (4.0.4)
+      actionpack (= 4.0.4)
       mail (~> 2.5.4)
-    actionpack (4.0.3)
-      activesupport (= 4.0.3)
+    actionpack (4.0.4)
+      activesupport (= 4.0.4)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
@@ -64,7 +115,7 @@ GEM
     active_utils (2.0.2)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.42.6)
+    activemerchant (1.42.8)
       active_utils (~> 2.0, >= 2.0.1)
       activesupport (>= 2.3.14, < 5.0.0)
       builder (>= 2.1.2, < 4.0.0)
@@ -72,28 +123,24 @@ GEM
       json (~> 1.7)
       money (< 7.0.0)
       nokogiri (~> 1.4)
-    activemodel (4.0.3)
-      activesupport (= 4.0.3)
+    activemodel (4.0.4)
+      activesupport (= 4.0.4)
       builder (~> 3.1.0)
-    activerecord (4.0.3)
-      activemodel (= 4.0.3)
+    activerecord (4.0.4)
+      activemodel (= 4.0.4)
       activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.3)
+      activesupport (= 4.0.4)
       arel (~> 4.0.0)
     activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.3)
-      i18n (~> 0.6, >= 0.6.4)
+    activesupport (4.0.4)
+      i18n (~> 0.6, >= 0.6.9)
       minitest (~> 4.2)
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     acts_as_list (0.3.0)
       activerecord (>= 3.0)
-    akami (1.2.1)
-      gyoku (>= 0.4.0)
-      nokogiri
     arel (4.0.2)
-    atomic (1.1.15)
     awesome_nested_set (3.0.0.rc.3)
       activerecord (>= 4.0.0, < 5)
     aws-sdk (1.27.0)
@@ -101,15 +148,13 @@ GEM
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
     bcrypt (3.1.7)
-    bcrypt-ruby (3.1.5)
-      bcrypt (>= 3.1.3)
     builder (3.1.4)
     cancan (1.6.10)
-    canonical-rails (0.0.3)
+    canonical-rails (0.0.7)
       rails (>= 3.1, < 5.0)
     climate_control (0.0.3)
       activesupport (>= 3.0)
-    cocaine (0.5.3)
+    cocaine (0.5.4)
       climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -118,13 +163,13 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    colorize (0.6.0)
+    colorize (0.7.1)
     deface (1.0.0)
       colorize (>= 0.5.8)
       nokogiri (~> 1.6.0)
       rails (>= 3.1)
-    devise (3.2.3)
-      bcrypt-ruby (~> 3.0)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
@@ -135,19 +180,34 @@ GEM
       logging
       method_source
     erubis (2.7.0)
+    excon (0.32.1)
     execjs (2.0.2)
-    ffaker (1.23.0)
+    ffaker (1.24.0)
+    fog (1.21.0)
+      fog-brightbox
+      fog-core (~> 1.21, >= 1.21.1)
+      fog-json
+      nokogiri (~> 1.5, >= 1.5.11)
+    fog-brightbox (0.0.1)
+      fog-core
+      fog-json
+    fog-core (1.21.1)
+      builder
+      excon (~> 0.32)
+      formatador (~> 0.2.0)
+      mime-types
+      net-scp (~> 1.1)
+      net-ssh (>= 2.1.3)
+    fog-json (1.0.0)
+      multi_json (~> 1.0)
+    formatador (0.2.4)
     friendly_id (5.0.3)
       activerecord (>= 4.0.0)
-    gyoku (0.4.6)
-      builder (>= 2.1.2)
     highline (1.6.21)
     hike (1.2.3)
     httparty (0.13.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpi (1.1.1)
-      rack
     i18n (0.6.9)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
@@ -171,17 +231,19 @@ GEM
       treetop (~> 1.4.8)
     method_source (0.8.2)
     mime-types (1.25.1)
-    mini_portile (0.5.2)
+    mini_portile (0.5.3)
     minitest (4.7.5)
-    monetize (0.1.4)
-    money (6.0.1)
+    monetize (0.2.0)
+      money (~> 6.1.0.beta1)
+    money (6.1.1)
       i18n (~> 0.6.4)
-      monetize (~> 0.1.3)
-    multi_json (1.9.0)
+    multi_json (1.9.2)
     multi_xml (0.5.5)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.8.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
-    nori (1.1.5)
     orm_adapter (0.5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
@@ -200,25 +262,25 @@ GEM
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.0.3)
-      actionmailer (= 4.0.3)
-      actionpack (= 4.0.3)
-      activerecord (= 4.0.3)
-      activesupport (= 4.0.3)
+    rails (4.0.4)
+      actionmailer (= 4.0.4)
+      actionpack (= 4.0.4)
+      activerecord (= 4.0.4)
+      activesupport (= 4.0.4)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.3)
+      railties (= 4.0.4)
       sprockets-rails (~> 2.0.0)
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
-    railties (4.0.3)
-      actionpack (= 4.0.3)
-      activesupport (= 4.0.3)
+    railties (4.0.4)
+      actionpack (= 4.0.4)
+      activesupport (= 4.0.4)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.1.1)
+    rake (10.2.2)
     ransack (1.1.0)
       actionpack (>= 3.0)
       activerecord (>= 3.0)
@@ -226,73 +288,18 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
-    sass (3.3.0)
-      rake
-    sass-rails (4.0.1)
+    sass (3.2.19)
+    sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
-      sass (>= 3.1.10)
-      sprockets-rails (~> 2.0.0)
-    savon (1.2.0)
-      akami (~> 1.2.0)
-      builder (>= 2.1.2)
-      gyoku (~> 0.4.5)
-      httpi (~> 1.1.0)
-      nokogiri (>= 1.4.0)
-      nori (~> 1.1.0)
-      wasabi (~> 2.5.0)
+      sass (~> 3.2.0)
+      sprockets (~> 2.8, <= 2.11.0)
+      sprockets-rails (~> 2.0)
     sdoc (0.4.0)
       json (~> 1.8)
       rdoc (~> 4.0, < 5.0)
     select2-rails (3.4.9)
       sass-rails
       thor (~> 0.14)
-    spree (2.2.0)
-      spree_api (= 2.2.0)
-      spree_backend (= 2.2.0)
-      spree_cmd (= 2.2.0)
-      spree_core (= 2.2.0)
-      spree_frontend (= 2.2.0)
-      spree_sample (= 2.2.0)
-    spree_api (2.2.0)
-      rabl (= 0.9.3)
-      spree_core (= 2.2.0)
-      versioncake (~> 1.2.0)
-    spree_backend (2.2.0)
-      jquery-rails (~> 3.1.0)
-      jquery-ui-rails (~> 4.1.0)
-      select2-rails (~> 3.4.7)
-      spree_api (= 2.2.0)
-      spree_core (= 2.2.0)
-    spree_cmd (2.2.0)
-      thor (~> 0.14)
-    spree_core (2.2.0)
-      activemerchant (~> 1.42.3)
-      acts_as_list (= 0.3.0)
-      awesome_nested_set (~> 3.0.0.rc.3)
-      aws-sdk (= 1.27.0)
-      cancan (~> 1.6.10)
-      deface (~> 1.0.0)
-      ffaker (~> 1.16)
-      friendly_id (= 5.0.3)
-      highline (~> 1.6.18)
-      httparty (~> 0.11)
-      json (~> 1.7)
-      kaminari (~> 0.15.0)
-      paperclip (~> 3.4.1)
-      paranoia (~> 2.0)
-      rails (~> 4.0.3)
-      ransack (~> 1.1.0)
-      state_machine (= 1.2.0)
-      stringex (~> 1.5.1)
-      truncate_html (= 0.9.2)
-    spree_frontend (2.2.0)
-      canonical-rails
-      jquery-rails (~> 3.1.0)
-      spree_api (= 2.2.0)
-      spree_core (= 2.2.0)
-      stringex (~> 1.5.1)
-    spree_sample (2.2.0)
-      spree_core (= 2.2.0)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -307,9 +314,8 @@ GEM
     therubyracer (0.11.4)
       libv8 (~> 3.11.8.12)
       ref
-    thor (0.18.1)
-    thread_safe (0.2.0)
-      atomic (>= 1.1.7, < 2)
+    thor (0.19.1)
+    thread_safe (0.3.2)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
@@ -320,10 +326,13 @@ GEM
       sprockets (>= 2.0.0)
     turbolinks (2.2.1)
       coffee-rails
-    tzinfo (0.3.38)
-    uglifier (2.4.0)
+    tzinfo (0.3.39)
+    uglifier (2.5.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.6)
     uuidtools (2.1.4)
     versioncake (1.2.0)
       actionpack (>= 3.2)
@@ -332,15 +341,13 @@ GEM
       tzinfo
     warden (1.2.3)
       rack (>= 1.0)
-    wasabi (2.5.1)
-      httpi (~> 1.0)
-      nokogiri (>= 1.4.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  fog
   inkomerce_api!
   jbuilder (~> 1.2)
   jquery-rails
@@ -350,7 +357,7 @@ DEPENDENCIES
   rails_12factor
   sass-rails (~> 4.0.0)
   sdoc
-  spree (~> 2.2.0)
+  spree!
   spree_auth_devise!
   spree_gateway!
   spree_inkomerce!
@@ -359,3 +366,4 @@ DEPENDENCIES
   turbo-sprockets-rails3
   turbolinks
   uglifier (>= 1.3.0)
+  unf

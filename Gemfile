@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.0.0"
+ruby "2.1.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.0.3'
@@ -46,7 +46,8 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree', '~> 2.2.0'
+#gem 'spree', '~> 2.2.0'
+gem 'spree', git: 'https://github.com/spree/spree', branch: '2-2-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
 gem 'therubyracer'
@@ -62,3 +63,5 @@ gem 'rails_12factor', group: :production
 group :assets do
   gem 'turbo-sprockets-rails3'
 end
+gem 'fog'
+gem 'unf'
