@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree
-  revision: 9eeb6091a992505e6c9cf234dac641ff1789e5f5
+  revision: 761ba5ffcc47dd8573b17f5ec5cdcef6a66dc3a5
   branch: 2-2-stable
   specs:
     spree (2.2.2.beta)
@@ -315,7 +315,7 @@ GEM
       libv8 (~> 3.11.8.12)
       ref
     thor (0.19.1)
-    thread_safe (0.3.2)
+    thread_safe (0.3.3)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
@@ -324,7 +324,7 @@ GEM
     turbo-sprockets-rails3 (0.2.9)
       railties (>= 3.1.0)
       sprockets (>= 2.0.0)
-    turbolinks (2.2.1)
+    turbolinks (2.2.2)
       coffee-rails
     tzinfo (0.3.39)
     uglifier (2.5.0)
