@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/ronenm/inkomerce_api.git
-  revision: 4079f75553266bdf1b597b26afffed0fac80b63a
+  revision: dfbeef16487a61399c3ca3b1d29af51cbc5c80fe
   specs:
     inkomerce_api (0.1.0)
 
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree
-  revision: 23efd6149f51e4b90ca4b3d331c9c6a631cecda4
+  revision: d9a41c50123ee1d140a380f98cb144c4a19bd568
   branch: 2-2-stable
   specs:
     spree (2.2.3.beta)
@@ -58,7 +58,7 @@ GIT
       deface (~> 1.0.0)
       ffaker (~> 1.16)
       font-awesome-rails (~> 4.0)
-      friendly_id (= 5.0.3)
+      friendly_id (~> 5.0.4)
       highline (~> 1.6.18)
       httparty (~> 0.11)
       json (~> 1.7)
@@ -82,7 +82,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_auth_devise.git
-  revision: 4959656be98742249f85879207a606e05d622cc6
+  revision: 81a0fbb2db15efbbb50d0d139bbc41aee7fa58a1
   branch: 2-2-stable
   specs:
     spree_auth_devise (2.2.0)
@@ -95,7 +95,7 @@ GIT
 
 GIT
   remote: https://github.com/spree/spree_gateway.git
-  revision: 46b8610fd1db198410542374536c7cb17263b1a3
+  revision: ea9dd046848523c79845abbd5462f5e13941276e
   branch: 2-2-stable
   specs:
     spree_gateway (2.2.1)
@@ -181,13 +181,14 @@ GEM
       logging
       method_source
     erubis (2.7.0)
-    excon (0.33.0)
-    execjs (2.0.2)
+    excon (0.36.0)
+    execjs (2.2.0)
     ffaker (1.24.0)
-    fog (1.22.0)
+    fog (1.22.1)
       fog-brightbox
-      fog-core (~> 1.21, >= 1.21.1)
+      fog-core (~> 1.22)
       fog-json
+      ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
     fog-brightbox (0.0.2)
       fog-core
@@ -204,7 +205,7 @@ GEM
     font-awesome-rails (4.1.0.0)
       railties (>= 3.2, < 5.0)
     formatador (0.2.5)
-    friendly_id (5.0.3)
+    friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     highline (1.6.21)
     hike (1.2.3)
@@ -212,6 +213,7 @@ GEM
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     i18n (0.6.9)
+    ipaddress (0.8.0)
     jbuilder (1.5.3)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2.0)
@@ -259,7 +261,7 @@ GEM
     pg (0.17.1)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
-    polyglot (0.3.4)
+    polyglot (0.3.5)
     rabl (0.9.3)
       activesupport (>= 2.3.14)
     rack (1.5.2)
@@ -318,7 +320,7 @@ GEM
       libv8 (~> 3.11.8.12)
       ref
     thor (0.19.1)
-    thread_safe (0.3.3)
+    thread_safe (0.3.4)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
