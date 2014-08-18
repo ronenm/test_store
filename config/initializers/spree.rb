@@ -10,7 +10,7 @@ Spree.config do |config|
   # Uncomment to override the default site name.
   config.site_name = "Spree-InKomerce Demo Site"
   config.inkomerce_site_type = 'production'
-  config.inkit_button_logo_url = "https://s3.amazonaws.com/inkomerce-assets/sellers-assets/ink_can_light_with_bg.png"
+  config.inkit_button_logo_url = "https://s3.amazonaws.com/inkomerce-assets/sellers-assets/oj_icon_white.png"
   # Paper clip settings have moved to the application.rb configuration file (using paperclip_defaults hash)
   #config.s3_bucket  = ENV['S3_BUCKET']
   #config.s3_access_key = ENV['S3_ACCESS_KEY']

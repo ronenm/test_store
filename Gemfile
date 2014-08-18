@@ -54,9 +54,9 @@ gem 'therubyracer'
 gem 'libv8', '~> 3.11.8'
 gem 'inkomerce_api', git: 'https://github.com/ronenm/inkomerce_api.git'
 #gem 'inkomerce_api', path: '../../gems/inkomerce_api'
-gem 'spree_inkomerce', git: 'https://github.com/ronenm/spree_inkomerce.git', :branch => '2-2-stable'
+gem 'spree_inkomerce', git: 'https://github.com/ronenm/spree_inkomerce.git', :branch => 'offer-jar-1'
 #gem 'spree_inkomerce', path: '../../spree_extensions/spree_inkomerce'
-gem 'spree_inkomerce_frontend', git: 'https://github.com/ronenm/spree_inkomerce_frontend.git'
+gem 'spree_inkomerce_frontend', git: 'https://github.com/ronenm/spree_inkomerce_frontend.git', :branch => 'offer-jar-1'
 
 
 gem 'rails_12factor', group: :production
