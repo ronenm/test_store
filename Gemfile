@@ -53,6 +53,7 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'therubyracer'
 gem 'libv8', '~> 3.11.8'
 gem 'inkomerce_api', git: 'https://github.com/ronenm/inkomerce_api.git'
+
 #gem 'inkomerce_api', path: '../../gems/inkomerce_api'
 gem 'spree_inkomerce', git: 'https://github.com/ronenm/spree_inkomerce.git', :branch => 'offer-jar-1'
 #gem 'spree_inkomerce', path: '../../spree_extensions/spree_inkomerce'
